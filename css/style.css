@@ -1,0 +1,87 @@
+body {
+    background-color: lightgreen;
+}
+
+#topMain {
+    background-color: lightpink;
+}
+
+#kanalKing {
+    background-color: lightcoral;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+#kanalKingPic {
+    border-radius: 50%;
+}
+
+/*Hier Stylisierungen von allgemeinen Titeln, Schriftstylen, Paragraphen etc*/
+#mainTitle {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 75px;
+    font-family: Verdana, sans-serif;
+    background-color: lightblue;
+}
+
+#begruessung {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 35px;
+    background-color: lightblue;
+}
+
+.vidName {
+    background-color:aquamarine;
+    font-family: Georgia, serif;
+    font-size: 50px;
+    margin: 10px;
+}
+
+
+/* Hier befindet sich das CSS für den grossen Video-Grid-Container Bereich*/
+#videoContainerMain {
+    background-color: lightseagreen;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 40px;
+    margin: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 50px;
+
+    grid-template-areas:
+        "v1 v2 v3"
+        "v4 v5 v6"
+        "v7 v8 v9";
+}
+
+/*Hier sind die einzelnen, kleinen Container für die einzelnen Videos: Anfang macht der vidCon = Änderungen für alle*/
+.vidCon {
+    background-color: darkgreen;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.vidCon:hover {
+    transform: scale(1.05);
+}
+
+.vid1 {
+    grid-area: v1;
+}
+
+.vid2 {
+    grid-area: v2;
+}
+
+.vid3 {
+    grid-area: v3;
+}
